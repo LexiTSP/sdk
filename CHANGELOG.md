@@ -100,7 +100,7 @@ production codebase where TSP has run since March 2026.
 - MIT license
 
 ### Specification
-- Implements TSP v2.0 — see [truststandardprotocol.org/spec](https://truststandardprotocol.org/spec)
+- Implements TSP v2.0 — see [truststandardprotocol.com/spec](https://truststandardprotocol.com/spec)
 - Compatible with envelopes produced by other v2.0 conformant implementations
 - Hash algorithm: SHA-256 over canonical JSON
 - Score weights: source 0.5, process 0.3, alignment 0.2

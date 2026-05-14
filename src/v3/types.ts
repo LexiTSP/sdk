@@ -2,7 +2,7 @@
  * @lexitsp/sdk v3 · types
  *
  * Trust Standard Protocol v3.0 type definitions.
- * Source of truth — duplicated in spec at truststandardprotocol.org/spec/v3.
+ * Source of truth — duplicated in spec at truststandardprotocol.com/spec/v3.
  *
  * v3 is intentionally separate from v2 (no shared types). v2 is being
  * deprecated; the hard break is documented in the protocol spec.

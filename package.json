@@ -52,7 +52,7 @@
     "audit-trail",
     "ai-governance"
   ],
-  "homepage": "https://truststandardprotocol.org",
+  "homepage": "https://truststandardprotocol.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lexitsp/sdk.git"

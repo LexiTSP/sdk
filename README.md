@@ -3,7 +3,7 @@
 > Trust Standard Protocol v3 alpha: sign AI outputs as cryptographically verifiable `TrustEnvelope`s and verify signatures, hashes and manifests locally or online.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![TSP v3.0 alpha](https://img.shields.io/badge/TSP-v3.0--alpha-1E3A5F.svg)](https://truststandardprotocol.org/spec)
+[![TSP v3.0 alpha](https://img.shields.io/badge/TSP-v3.0--alpha-1E3A5F.svg)](https://truststandardprotocol.com/spec)
 
 ## Status
 
@@ -34,7 +34,7 @@ const envelope = await wrap(
   },
   {
     signer: {
-      keyRef: "https://truststandardprotocol.org/.well-known/tsp-manifest.json#example-instance",
+      keyRef: "https://truststandardprotocol.com/.well-known/tsp-manifest.json#example-instance",
       publicKey,
       certChain: [],
       sign: (data) => sign(keyPair.privateKey, data),
@@ -128,10 +128,10 @@ Node-only utilities are available from `@lexitsp/sdk/node`.
 
 ## Protocol Docs
 
-- Spec: https://truststandardprotocol.org/spec
-- API reference: https://truststandardprotocol.org/docs
-- Playground: https://truststandardprotocol.org/playground
-- Browser verifier: https://truststandardprotocol.org/verify
+- Spec: https://truststandardprotocol.com/spec
+- API reference: https://truststandardprotocol.com/docs
+- Playground: https://truststandardprotocol.com/playground
+- Browser verifier: https://truststandardprotocol.com/verify
 
 ## Interop Fixtures
 
@@ -149,4 +149,4 @@ MIT. The TSP specification is published under CC-BY 4.0.
 
 ## Contact
 
-LexiCo AS · Tønsberg, Norway · https://truststandardprotocol.org
+LexiCo AS · Tønsberg, Norway · https://truststandardprotocol.com

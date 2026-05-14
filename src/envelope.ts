@@ -91,7 +91,7 @@ export async function wrap(
  */
 export function toJsonLd(envelope: TrustEnvelope): Record<string, unknown> {
   return {
-    "@context": "https://truststandardprotocol.org/context/v2",
+    "@context": "https://truststandardprotocol.com/context/v2",
     "@type": "TrustEnvelope",
     "@id": envelope.ledger.id,
     version: envelope.version,
