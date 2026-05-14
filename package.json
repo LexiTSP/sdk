@@ -1,7 +1,7 @@
 {
   "name": "@lexitsp/sdk",
   "version": "3.0.0-alpha.5",
-  "description": "Trust Standard Protocol — runtime compliance layer for the EU AI Act. Wraps AI responses in cryptographically verifiable Trust Envelopes.",
+  "description": "TypeScript SDK and CLI for Trust Standard Protocol envelopes checked with signatures, hashes, manifests, and timestamp evidence.",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -55,7 +55,7 @@
   "homepage": "https://truststandardprotocol.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lexitsp/sdk.git"
+    "url": "git+https://github.com/LexiTSP/sdk.git"
   },
   "author": "LexiCo AS <hello@lexico.no>",
   "dependencies": {
