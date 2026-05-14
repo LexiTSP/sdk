@@ -7,7 +7,7 @@
 
 ## Status
 
-`@lexitsp/sdk@3.0.0-alpha.4` is the reference TypeScript implementation for the public TSP alpha. It is frozen as the TSP Spec 1.0 Candidate implementation until an external organization signs a TrustEnvelope with its own key and DNS-hosted manifest.
+`@lexitsp/sdk@3.0.0-alpha.5` is the reference TypeScript implementation for the public TSP alpha. It is frozen as the TSP Spec 1.0 Candidate implementation until an external organization signs a TrustEnvelope with its own key and DNS-hosted manifest.
 
 The SDK is sovereign by default: you can sign and verify envelopes without LexiCo infrastructure. Online verification can add manifest, certificate, revocation, TSA and DANE checks when those services are configured.
 

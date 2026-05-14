@@ -1,3 +1,3 @@
 #!/usr/bin/env bun
-import { main } from "../src/v3/cli/index.ts";
+import { main } from "../dist/v3/cli/index.js";
 await main(process.argv);

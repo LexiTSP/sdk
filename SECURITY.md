@@ -7,7 +7,7 @@ material, manifest compromise, verifier bypasses or package supply-chain issues.
 
 For public alpha, the supported package line is:
 
-- `@lexitsp/sdk@3.0.0-alpha.4`
+- `@lexitsp/sdk@3.0.0-alpha.5`
 
 The default trusted TSA list is intentionally empty until a real provider has
 been inspected and fingerprint-validated.
