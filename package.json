@@ -1,6 +1,6 @@
 {
   "name": "@lexitsp/sdk",
-  "version": "3.0.0-alpha.5",
+  "version": "3.0.0-alpha.6",
   "description": "TypeScript SDK and CLI for Trust Standard Protocol envelopes checked with signatures, hashes, manifests, and timestamp evidence.",
   "license": "MIT",
   "type": "module",
