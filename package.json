@@ -1,0 +1,73 @@
+{
+  "name": "@lexitsp/sdk",
+  "version": "3.0.0-alpha.4",
+  "description": "Trust Standard Protocol — runtime compliance layer for the EU AI Act. Wraps AI responses in cryptographically verifiable Trust Envelopes.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    },
+    "./node": {
+      "types": "./src/node/index.ts",
+      "import": "./src/node/index.ts"
+    },
+    "./types": {
+      "types": "./src/types.ts",
+      "import": "./src/types.ts"
+    },
+    "./v3": {
+      "types": "./src/v3/index.ts",
+      "import": "./src/v3/index.ts"
+    },
+    "./v3/admin": {
+      "types": "./src/v3/admin/index.ts",
+      "import": "./src/v3/admin/index.ts"
+    }
+  },
+  "bin": {
+    "tsp": "./bin/tsp.mjs"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "tsp",
+    "trust-standard-protocol",
+    "ai",
+    "compliance",
+    "eu-ai-act",
+    "cryptography",
+    "envelope",
+    "audit-trail",
+    "ai-governance"
+  ],
+  "homepage": "https://truststandardprotocol.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lexitsp/sdk"
+  },
+  "author": "LexiCo AS <hello@lexico.no>",
+  "dependencies": {
+    "nanoid": "^5.0.9"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0",
+    "fast-check": "^3.19.0",
+    "@types/node": "^22.10.5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  }
+}
