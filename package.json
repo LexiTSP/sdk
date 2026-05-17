@@ -68,7 +68,7 @@
   "devDependencies": {
     "tsup": "^8.5.1",
     "vitest": "^4.1.6",
-    "fast-check": "^3.19.0",
+    "fast-check": "^4.8.0",
     "typescript": "5.7.2",
     "@types/node": "^22.10.5"
   },
