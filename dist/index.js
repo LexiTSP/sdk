@@ -120,7 +120,7 @@ async function wrap(content, config, options = {}) {
 }
 function toJsonLd(envelope) {
   return {
-    "@context": "https://truststandardprotocol.org/context/v2",
+    "@context": "https://truststandardprotocol.com/context/v2",
     "@type": "TrustEnvelope",
     "@id": envelope.ledger.id,
     version: envelope.version,
