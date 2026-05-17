@@ -2,7 +2,7 @@
  * @lexitsp/sdk v3 · types
  *
  * Trust Standard Protocol v3.0 type definitions.
- * Source of truth — duplicated in spec at truststandardprotocol.org/spec/v3.
+ * Source of truth — duplicated in spec at truststandardprotocol.com/spec/v3.
  *
  * v3 is intentionally separate from v2 (no shared types). v2 is being
  * deprecated; the hard break is documented in the protocol spec.
@@ -205,4 +205,4 @@ interface TrustManifest {
 type UnsignedManifest = Omit<TrustManifest, "rootSignatureOverManifest">;
 type InstanceCertPayload = Omit<InstanceCertEntry, "rootSignature">;
 
-export { type Alignment as A, type Base64 as B, type Content as C, type Declaration as D, importPublicKeyJwk as E, sign as F, verify as G, type InstanceCertPayload as I, type JwkEd25519Public as J, type KeyPair as K, type Ledger as L, type Model as M, type Process as P, type RevokedEntry as R, type Severity as S, type TrustEnvelope as T, type UncertaintyEntry as U, type VerifyResult as V, type InstanceCertEntry as a, type AcceptableAge as b, type TrustManifest as c, type AlignmentFlag as d, type CheckResult as e, type CheckStatus as f, type Citation as g, type ContentType as h, type ISO8601 as i, type PipelineStep as j, type PrimarySource as k, type Sha256 as l, type SignatureAlgorithm as m, type SignatureEntry as n, type SignatureRole as o, type SourceType as p, type SystemPromptField as q, TSP_V3_VERSION as r, type Timestamp as s, type UnsignedManifest as t, type UuidV7 as u, type VerifyChecks as v, exportPrivateKeyJwk as w, exportPublicKeyJwk as x, generateKeyPair as y, importPrivateKeyJwk as z };
+export { type AcceptableAge as A, type Base64 as B, type CheckResult as C, type Declaration as D, importPublicKeyJwk as E, sign as F, verify as G, type ISO8601 as I, type JwkEd25519Public as J, type KeyPair as K, type Ledger as L, type Model as M, type PipelineStep as P, type RevokedEntry as R, type Severity as S, TSP_V3_VERSION as T, type UncertaintyEntry as U, type VerifyChecks as V, type Alignment as a, type AlignmentFlag as b, type CheckStatus as c, type Citation as d, type Content as e, type ContentType as f, type InstanceCertEntry as g, type InstanceCertPayload as h, type PrimarySource as i, type Process as j, type Sha256 as k, type SignatureAlgorithm as l, type SignatureEntry as m, type SignatureRole as n, type SourceType as o, type SystemPromptField as p, type Timestamp as q, type TrustEnvelope as r, type TrustManifest as s, type UnsignedManifest as t, type UuidV7 as u, type VerifyResult as v, exportPrivateKeyJwk as w, exportPublicKeyJwk as x, generateKeyPair as y, importPrivateKeyJwk as z };

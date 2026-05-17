@@ -1,4 +1,4 @@
-import { J as JwkEd25519Public, a as InstanceCertEntry, R as RevokedEntry, c as TrustManifest } from '../../manifest-types-BvltqKuH.js';
+import { J as JwkEd25519Public, g as InstanceCertEntry, R as RevokedEntry, s as TrustManifest } from '../../manifest-types-DlMMVBkk.js';
 
 interface GeneratedRootKey {
     organization: string;

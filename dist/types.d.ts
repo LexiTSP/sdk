@@ -2,7 +2,7 @@
  * @lexitsp/sdk · types
  *
  * Core type definitions for Trust Standard Protocol v2.0.
- * Source of truth — duplicated in spec at truststandardprotocol.org/spec.
+ * Source of truth — duplicated in spec at truststandardprotocol.com/spec.
  */
 type ConfidenceLevel = "high" | "medium" | "low" | "critical";
 type SourceType = "legal-database" | "government-website" | "official-document" | "academic-paper" | "verified-website" | "model-knowledge" | "user-input" | "unknown";
