@@ -141,6 +141,22 @@ with its own key and DNS-hosted `https://<domain>/.well-known/tsp-manifest.json`
 Sovereign by default. The MIT licence and the CC-BY-4.0 spec together
 mean: even if LexiCo disappears, your implementation keeps working.
 
+### Experimental: `@lexitsp/sdk/v4` (RFC 0001 preview)
+
+A separate `src/v4/` subtree implements the reference for
+[RFC 0001 — "TSP as substrate"](https://github.com/LexiTSP/tsp-site/blob/main/docs/rfc/0001-tsp-as-substrate.md).
+It carries wire version `4.0-draft` and is intentionally not yet
+recommended for production issuance. The proposal turns the AI-only
+`process` field into a `provenance: Provenance` discriminated union so
+the same SDK, manifest layer, and verifier can attest credentials,
+attestations and supply-chain claims — not only AI outputs.
+
+If you want to play with it, see
+[`examples/03-substrate-credential/`](./examples/03-substrate-credential/)
+or read [`src/v4/README.md`](./src/v4/README.md). Feedback goes through
+the RFC process documented in
+[`SPEC-GOVERNANCE.md`](https://github.com/LexiTSP/tsp-site/blob/main/docs/SPEC-GOVERNANCE.md).
+
 ---
 
 ## Online verification

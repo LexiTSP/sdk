@@ -1,23 +1,8 @@
-import { J as JwkEd25519Public, e as Content, D as Declaration, j as Process, a as Alignment, r as TrustEnvelope, v as VerifyResult, h as InstanceCertPayload, g as InstanceCertEntry, R as RevokedEntry, A as AcceptableAge, s as TrustManifest } from '../manifest-types-DlMMVBkk.js';
-export { b as AlignmentFlag, B as Base64, C as CheckResult, c as CheckStatus, d as Citation, f as ContentType, I as ISO8601, K as KeyPair, L as Ledger, M as Model, P as PipelineStep, i as PrimarySource, S as Severity, k as Sha256, l as SignatureAlgorithm, m as SignatureEntry, n as SignatureRole, o as SourceType, p as SystemPromptField, T as TSP_V3_VERSION, q as Timestamp, U as UncertaintyEntry, t as UnsignedManifest, u as UuidV7, V as VerifyChecks, w as exportPrivateKeyJwk, x as exportPublicKeyJwk, y as generateKeyPair, z as importPrivateKeyJwk, E as importPublicKeyJwk, F as sign, G as verifyEd25519 } from '../manifest-types-DlMMVBkk.js';
-
-/**
- * RFC 8785 — JSON Canonicalization Scheme (JCS).
- *
- * Strict implementation that produces deterministic output across
- * languages and platforms. Reference: https://datatracker.ietf.org/doc/html/rfc8785
- *
- * Number serialization delegates to JSON.stringify, which in V8/JSC/SpiderMonkey
- * conforms to ECMA-262 §7.1.12.1 for finite numbers (matching RFC 8785 §3.2.2.3).
- */
-declare function canonicalize(value: unknown): string;
-
-/**
- * SHA-256 hex digest helper, used together with canonicalize() to produce
- * stable hashes of canonical-JSON serialized values.
- */
-declare function sha256Hex(input: string): Promise<string>;
-declare function sha256Bytes(input: Uint8Array): Promise<Uint8Array>;
+import { J as JwkEd25519Public, f as Content, D as Declaration, i as Process, A as Alignment, q as TrustEnvelope, s as VerifyResult } from '../crypto-BK9EkNd3.js';
+export { a as AlignmentFlag, B as Base64, C as CheckResult, d as CheckStatus, e as Citation, g as ContentType, I as ISO8601, K as KeyPair, L as Ledger, M as Model, P as PipelineStep, h as PrimarySource, S as Severity, j as Sha256, k as SignatureAlgorithm, l as SignatureEntry, m as SignatureRole, n as SourceType, o as SystemPromptField, T as TSP_V3_VERSION, p as Timestamp, U as UncertaintyEntry, r as UuidV7, V as VerifyChecks, t as exportPrivateKeyJwk, u as exportPublicKeyJwk, v as generateKeyPair, w as importPrivateKeyJwk, x as importPublicKeyJwk, y as sign, z as verifyEd25519 } from '../crypto-BK9EkNd3.js';
+export { c as canonicalize, s as sha256Bytes, a as sha256Hex } from '../canonical-hash-D6poh0YE.js';
+import { a as InstanceCertPayload, I as InstanceCertEntry, R as RevokedEntry, A as AcceptableAge, T as TrustManifest } from '../manifest-types-B9UOVg9n.js';
+export { U as UnsignedManifest } from '../manifest-types-B9UOVg9n.js';
 
 /**
  * @lexitsp/sdk v3 · envelope construction
@@ -325,4 +310,4 @@ interface VerifyTsaResult {
 }
 declare function verifyTsaToken(tokenBase64: string, expectedHash: Uint8Array, trustList?: TrustedTsa[]): Promise<VerifyTsaResult>;
 
-export { AcceptableAge, Alignment, type CertValidityResult, Content, DEFAULT_TRUSTED_TSAS, type DaneOptions, type DaneResult, Declaration, type FetchManifestOptions, type FetchManifestResult, InstanceCertEntry, InstanceCertPayload, type InstanceCertSignInput, JwkEd25519Public, type ManifestSignInput, Process, type PruneOptions, type RevocationResult, RevokedEntry, type RootSigner, type SequenceCheckResult, type Signer, TSA_PLACEHOLDER_TOKEN, TSA_PLACEHOLDER_URL, TrustEnvelope, TrustManifest, type TrustedTsa, type TsaClientOptions, type TsaStampResult, type VerifyLocalOptions, type VerifyOnlineOptions, VerifyResult, type VerifyTsaResult, type WrapInput, type WrapOptions, buildTimeStampReq, canonicalize, checkRevocation, checkSequence, clearManifestCache, clearSequenceState, fetchManifest, fingerprintCert, isCertValidAt, isTrustedTsaCert, pruneRevoked, recordSequence, sha256Bytes, sha256Hex, signInstanceCert, signManifest, stampHash, verifyDane, verifyInstanceCert, verifyLocal, verifyManifestSignature, verifyOnline, verifyTsaToken, wrap };
+export { AcceptableAge, Alignment, type CertValidityResult, Content, DEFAULT_TRUSTED_TSAS, type DaneOptions, type DaneResult, Declaration, type FetchManifestOptions, type FetchManifestResult, InstanceCertEntry, InstanceCertPayload, type InstanceCertSignInput, JwkEd25519Public, type ManifestSignInput, Process, type PruneOptions, type RevocationResult, RevokedEntry, type RootSigner, type SequenceCheckResult, type Signer, TSA_PLACEHOLDER_TOKEN, TSA_PLACEHOLDER_URL, TrustEnvelope, TrustManifest, type TrustedTsa, type TsaClientOptions, type TsaStampResult, type VerifyLocalOptions, type VerifyOnlineOptions, VerifyResult, type VerifyTsaResult, type WrapInput, type WrapOptions, buildTimeStampReq, checkRevocation, checkSequence, clearManifestCache, clearSequenceState, fetchManifest, fingerprintCert, isCertValidAt, isTrustedTsaCert, pruneRevoked, recordSequence, signInstanceCert, signManifest, stampHash, verifyDane, verifyInstanceCert, verifyLocal, verifyManifestSignature, verifyOnline, verifyTsaToken, wrap };

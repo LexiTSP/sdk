@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added (EXPERIMENTAL — RFC 0001 reference)
+- `src/v4/` — preview reference implementation for
+  [RFC 0001 "TSP as substrate"](https://github.com/LexiTSP/tsp-site/blob/main/docs/rfc/0001-tsp-as-substrate.md).
+  Wire version `4.0-draft`. NOT for production issuance.
+  - `provenance: Provenance` — discriminated union over a `kind` tag
+    (`"ai" | "credential" | "attestation" | "supply-chain"`),
+    replacing v3's AI-only `process` field.
+  - `qa: QA` — semantic rename of v3 `alignment` (shape unchanged).
+  - Profile helpers `aiProfile`, `credentialProfile`,
+    `attestationProfile`, `supplyChainProfile`.
+  - `verifyAny()` dispatches on `envelope.tsp` to route v3 envelopes
+    to the v3 verifier and v4 envelopes to the v4 verifier.
+  - Reuses v3's canonical-JSON, SHA-256, Ed25519, manifest, TSA,
+    revocation and DANE primitives **unchanged** — that reuse is the
+    substrate property the RFC claims, made physically visible.
+  - Exported as `@lexitsp/sdk/v4` once built.
+- `examples/03-substrate-credential/` — runnable web-course-credential
+  example that uses the same `wrap()`/`verifyLocal()` shape as the
+  AI examples, with `provenance.kind = "credential"`.
+- 17 v4 tests covering round-trip per kind, tamper detection,
+  cross-version dispatch, and registry enforcement.
+
 ### Added
 - `examples/01-minimal-wrap-verify/` — smallest possible end-to-end
   TSP example (wrap a string, verify it, change one character, watch

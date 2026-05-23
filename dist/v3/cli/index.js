@@ -1,16 +1,19 @@
 import {
-  sha256Hex,
-  verifyLocal,
   verifyOnline
-} from "../../chunk-SWH3RRGF.js";
+} from "../../chunk-C3UECK57.js";
+import {
+  sha256Hex,
+  verifyLocal
+} from "../../chunk-FCJZYNDW.js";
 import {
   buildManifest,
   generateRootKey,
   issueInstance
-} from "../../chunk-ALIGHPKW.js";
+} from "../../chunk-YID5OBCC.js";
+import "../../chunk-RMBQFA3P.js";
 import {
   canonicalize
-} from "../../chunk-CCJVYHGK.js";
+} from "../../chunk-4KU7MVRV.js";
 
 // src/v3/cli/shared.ts
 import { promises as fs } from "fs";

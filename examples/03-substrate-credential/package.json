@@ -1,0 +1,16 @@
+{
+  "name": "tsp-example-substrate-credential",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "EXPERIMENTAL — TSP v4 substrate demo: a course-completion credential as a TrustEnvelope, using the same SDK that wraps AI outputs.",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "@lexitsp/sdk": "^3.0.0-alpha.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
