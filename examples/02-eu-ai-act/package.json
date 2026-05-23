@@ -1,0 +1,17 @@
+{
+  "name": "tsp-example-eu-ai-act",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TSP example that wraps a regulated AI answer with realistic declaration/process/alignment fields and walks an auditor through it field by field.",
+  "scripts": {
+    "start": "node index.mjs",
+    "verify": "node verify.mjs"
+  },
+  "dependencies": {
+    "@lexitsp/sdk": "^3.0.0-alpha.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

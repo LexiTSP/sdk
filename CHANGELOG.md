@@ -5,6 +5,37 @@ All notable changes to `@lexitsp/sdk` will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+### Added
+- `examples/01-minimal-wrap-verify/` — smallest possible end-to-end
+  TSP example (wrap a string, verify it, change one character, watch
+  verification fail). Runs on plain Node 18+ or Bun 1.x against the
+  published `@lexitsp/sdk@alpha`.
+- `examples/02-eu-ai-act/` — realistic EU-AI-Act-flavoured example that
+  builds a `TrustEnvelope` with full `declaration`, `process`, `alignment`
+  and `ledger` fields for a fictional insurance claims assistant, saves
+  the envelope to disk and walks an auditor through field → article
+  mapping (Art. 12 / 13 / 14 / 15 / 50).
+- `examples/README.md` index page explaining how to run the examples and
+  what they deliberately do not do (no LexiCo infrastructure, `skipTsa`
+  for offline reproducibility, ephemeral keys instead of a published
+  `/.well-known/tsp-manifest.json`).
+
+### Changed
+- README reordered to put a runnable 5-minute path first, with the
+  product framing, EU-AI-Act article mapping and the canonical site
+  links right after it.
+- `SECURITY.md` rewritten with a concrete report channel
+  (`tsp@lexico.no`), a supported-version table and a 90-day coordinated
+  disclosure policy.
+- `CONTRIBUTING.md` rewritten around the three project rules: sovereign
+  by default, no silent trust, claims match code.
+
+### Notes
+- No protocol, wire-format, runtime or CLI behavior changes from
+  `3.0.0-alpha.6`. Existing envelopes and consumers are unaffected.
+
 ## 3.0.0-alpha.6 — 2026-05-14
 
 ### Changed

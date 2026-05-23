@@ -1,0 +1,8 @@
+node_modules/
+bun.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+envelope.json
+envelope.tampered.json
+public-key.json

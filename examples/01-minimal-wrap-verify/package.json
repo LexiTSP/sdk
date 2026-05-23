@@ -1,0 +1,16 @@
+{
+  "name": "tsp-example-minimal-wrap-verify",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Smallest possible TSP example: wrap a string, verify it, then tamper with it.",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "@lexitsp/sdk": "^3.0.0-alpha.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
