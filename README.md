@@ -1,12 +1,23 @@
+<p align="center">
+  <a href="https://truststandardprotocol.com">
+    <img src="https://raw.githubusercontent.com/LexiTSP/tsp-site/main/public/brand/tsp-banner.svg" alt="Trust Standard Protocol — cryptographic proof for AI outputs" width="100%">
+  </a>
+</p>
+
+<p align="center"><strong>Reference TypeScript SDK and CLI</strong> &middot; <a href="https://www.npmjs.com/package/@lexitsp/sdk"><code>@lexitsp/sdk</code></a></p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@lexitsp/sdk"><img src="https://img.shields.io/npm/v/@lexitsp/sdk/alpha?style=flat-square&color=F2B84B&labelColor=0A0E14&label=npm" alt="npm @lexitsp/sdk alpha"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-F2B84B?style=flat-square&labelColor=0A0E14" alt="License: MIT"></a>
+  <a href="https://truststandardprotocol.com/spec"><img src="https://img.shields.io/badge/TSP-v3.0--alpha-F2B84B?style=flat-square&labelColor=0A0E14" alt="TSP v3.0 alpha"></a>
+  <a href="https://truststandardprotocol.com"><img src="https://img.shields.io/badge/site-truststandardprotocol.com-F2B84B?style=flat-square&labelColor=0A0E14" alt="Site"></a>
+</p>
+
 # `@lexitsp/sdk`
 
 > Trust Standard Protocol v3 alpha — sign AI outputs as cryptographically
 > verifiable `TrustEnvelope`s and verify them locally or online without
 > trusting any vendor dashboard.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![TSP v3.0 alpha](https://img.shields.io/badge/TSP-v3.0--alpha-1E3A5F.svg)](https://truststandardprotocol.com/spec)
-[![npm](https://img.shields.io/badge/npm-@lexitsp%2Fsdk@alpha-cb3837.svg)](https://www.npmjs.com/package/@lexitsp/sdk)
 
 The Trust Standard Protocol (TSP) gives every important AI output a signed
 receipt — what was said, which source and process produced it, when it
