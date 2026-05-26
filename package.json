@@ -62,7 +62,7 @@
     "type": "git",
     "url": "git+https://github.com/LexiTSP/sdk.git"
   },
-  "author": "LexiCo AS <hello@lexico.no>",
+  "author": "Trust Standard Protocol <hello@truststandardprotocol.com>",
   "dependencies": {
     "nanoid": "^5.0.9"
   },

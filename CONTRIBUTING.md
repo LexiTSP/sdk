@@ -61,4 +61,4 @@ Do **not** report security issues in public. See [`SECURITY.md`](./SECURITY.md).
 
 ## Contact
 
-LexiCo AS · Tønsberg, Norway · <https://truststandardprotocol.com> · tsp@lexico.no
+LexiCo AS · Tønsberg, Norway · <https://truststandardprotocol.com> · hello@truststandardprotocol.com

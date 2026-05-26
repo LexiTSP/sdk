@@ -276,4 +276,4 @@ MIT for this SDK; CC-BY-4.0 for the TSP specification text.
 
 ## Contact
 
-LexiCo AS · Tønsberg, Norway · <https://truststandardprotocol.com> · tsp@lexico.no
+LexiCo AS · Tønsberg, Norway · <https://truststandardprotocol.com> · hello@truststandardprotocol.com

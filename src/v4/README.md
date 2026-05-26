@@ -111,5 +111,5 @@ Same `wrap()`, same `verifyLocal()`, same signature math as the AI case. Differe
 Per `SPEC-GOVERNANCE.md` §3.1:
 
 1. Open an issue on `LexiTSP/tsp-site` with tag `rfc-proposal` referencing RFC 0001.
-2. Or email `tsp@lexico.no`.
+2. Or email `hello@truststandardprotocol.com`.
 3. Charter-grounded objections are normative; aesthetic preferences are not.
