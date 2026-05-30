@@ -1,0 +1,31 @@
+{
+  "tsp": "3.0",
+  "timestamp": {
+    "issuedAt": "2026-05-29T01:19:45.000Z"
+  },
+  "process": {
+    "model": {
+      "version": "1.0",
+      "provider": "example-corp",
+      "name": "example-model"
+    }
+  },
+  "content": {
+    "value": "This will fail because the keys 'version', 'provider', and 'name' are not sorted in UTF-16 lexicographical order.",
+    "type": "text/plain",
+    "hash": "b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9"
+  },
+  "ledger": {
+    "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "id": "0192d847-c373-7729-bb88-2efcde989b5c",
+    "hash": "a4c28fcd99a0937a7ea7ebfa3c3b3e2d1d07e6e5a6efcd98b3c2a1a8f9c3e1d9"
+  },
+  "signatures": [
+    {
+      "signature": "base64-encoded-bad-signature-due-to-sorting-trap",
+      "role": "issuer",
+      "keyRef": "https://truststandardprotocol.com/.well-known/tsp-manifest.json#lexico-public-alpha-i1",
+      "alg": "Ed25519"
+    }
+  ]
+}

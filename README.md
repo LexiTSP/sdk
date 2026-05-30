@@ -249,7 +249,7 @@ LexiCo-hosted manifests do not count.
 ## Protocol docs and useful URLs
 
 - Spec: <https://truststandardprotocol.com/spec>
-- API reference: <https://truststandardprotocol.com/docs>
+- Developer docs & API reference: <https://truststandardprotocol.com/developers>
 - Browser verifier (paste an envelope, see it verify or fail): <https://truststandardprotocol.com/verify>
 - Playground (sign in the browser, then tamper): <https://truststandardprotocol.com/playground>
 - Canonical manifest: <https://truststandardprotocol.com/.well-known/tsp-manifest.json>
